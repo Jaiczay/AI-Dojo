@@ -1,10 +1,12 @@
-import torch
-from torchvision.datasets import MNIST
-from torchvision import transforms
-from model import MyNN
 import os
+
+import torch
 from torch.utils.data import DataLoader
+from torchvision import transforms
+from torchvision.datasets import MNIST
+
 from metrics import Metrics
+from model import MyNN
 
 
 def start_training(device_name="cpu", lr=0.1, epochs=10, batch_size=5, num_workers=2, lr_gamma=0.6, data_path="./data"):
