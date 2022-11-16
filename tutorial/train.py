@@ -17,7 +17,6 @@ def start_training(device_name="cuda:0", lr=0.1, epochs=15, batch_size=16, num_w
     if not os.path.exists(data_path):
         os.mkdir(data_path)
 
-    # train_set = MNIST(data_path, train=True, download=True, transform=Compose([RandomRotation(10), ToTensor()]))
     train_set = MNIST(data_path, train=True, download=True, transform=ToTensor())
     train_dataloader = DataLoader(train_set, batch_size=batch_size, num_workers=num_workers, shuffle=True)
 
