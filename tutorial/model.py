@@ -40,7 +40,6 @@ class MyCNN(nn.Module):
         x = self.hidden_layer_1(x)
         x = self.hidden_layer_2(x)
         x = self.hidden_layer_3(x)
-        # print(x.shape)
         x = torch.flatten(self.avgpool(x), 1)
         x = self.output_layer(x)
         return x
