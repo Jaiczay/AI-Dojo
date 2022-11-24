@@ -9,7 +9,7 @@ from metrics import Metrics
 from model import MyNN, MyCNN
 
 
-def start_training(device_name="cuda:0", lr=0.1, epochs=15, batch_size=16, num_workers=4, lr_gamma=0.7, data_path="./data"):
+def start_training(device_name="cpu", lr=0.1, epochs=15, batch_size=16, num_workers=4, lr_gamma=0.7, data_path="./data"):
     # setting the device (CPU or GPU)
     device = torch.device(device_name)
 
