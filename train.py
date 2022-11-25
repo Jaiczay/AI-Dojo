@@ -12,7 +12,7 @@ from model import MyNN, MyCNN
 torch.manual_seed(42)
 
 
-def start_training(device_name="cpu", lr=0.1, epochs=20, batch_size=16, num_workers=2, lr_gamma=0.8, data_path="./data"):
+def start_training(device_name="cpu", lr=0.1, epochs=2, batch_size=16, num_workers=2, lr_gamma=0.8, data_path="./data"):
     # setting the device (CPU or GPU)
     device = torch.device(device_name)
 
