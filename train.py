@@ -96,7 +96,7 @@ def save_weights(state_dict, acc, epoch):
         "metrics": acc,
         "epoch_counter": epoch,
     }
-    torch.save(model_data, "./best_weights.pt")
+    torch.save(model_data, "best_weights.pt")
 
 
 if __name__ == "__main__":
