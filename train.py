@@ -90,7 +90,7 @@ def start_training(device_name="cpu", lr=0.1, epochs=20, batch_size=16, num_work
                     save_weights(model.state_dict(), acc, epoch+1)
                     best_acc = acc
 
-    print("Best Accuracy: " + str(best_acc))
+    print("Best Accuracy: " + str(best_acc.item()))
 
 
 def save_weights(state_dict, acc, epoch):
